@@ -1,0 +1,37 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Array3D {
+    Scanner input = new Scanner(System.in);
+    
+        public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int[][][] array;
+            int x, y, z;
+            String result;
+					
+                System.out.print("Masukkan x: ");
+                x = input.nextInt();
+					
+		System.out.print("Masukkan y: ");
+		y = input.nextInt();
+					
+		System.out.print("Masukkan z: ");
+                z = input.nextInt();
+					
+		array = new int[x][y][z];
+					
+             for (int i = 0; i < x; i++) {
+			          for (int j = 0; j < y; j++) {
+                     for (int k = 0; k < z; k++) {
+				System.out.printf("[%o][%o][%o]: ", i, j, k);
+				array[i][j][k] = input.nextInt();
+               }
+                  }
+                     }
+                        result = Arrays.deepToString(array);
+			                  result = result.replace("[", "{");
+			                  result = result.replace("]", "}");
+                        
+                        System.out.printf("Result = %s\n", result);
+    }}
