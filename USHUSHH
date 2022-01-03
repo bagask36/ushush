@@ -1,0 +1,97 @@
+//1. Lengkapi Program dibawah ini, dan tuliskan outputnya: 
+  public static void main(String[] args) {
+      int Total;
+      int a = 2, b = 3, c = 6, d = 5;
+      
+      Total = b * d - c / a + b;
+      System.out.print("Total:" + Total);
+  }
+      
+----------------------------------------------------------
+                    output = Total:15
+----------------------------------------------------------
+
+//2. Lengkapi Program dibawah ini, dan tuliskan outputnya:
+  public static void main(String[] args) {
+      int a = 9; int b = 4;
+      int c= a/b;
+      System.out.print (“c:” + c);
+  }
+ -----------------------------------------------------------
+                         output = c:2
+ -----------------------------------------------------------
+  
+ //3. Ubah potongan program berikut dengan menggunakan struktur do-while
+   public static void main(String[] args) {
+        for(int i=1; i <= 10 ; i += 2){             
+        System.out.print(i + " ");       
+        }
+   }
+    
+  -----------------------------------------------------------
+   //do-while
+   public static void main(String[] args) {
+        int i = 1
+        do{
+            System.out.print(i + " ");
+            i+= 2;
+        }while(i <= 10):
+   }
+  -----------------------------------------------------------
+  
+  //4. Lengkapi Program dibawah ini, dan tuliskan outputnya:
+    public static void main(String[] args) {
+         int i, j;
+         for( i =1; i <=3; i++) {
+                   for (j=1; j <= i; j++) {
+                         System.out.println(“ @ “);
+                   }
+                    System.out.println( \n);
+          }
+    }
+   ----------------------------------------------------------
+    output =
+    @ 
+
+
+    @ 
+    @ 
+
+
+    @ 
+    @ 
+    @   
+   -----------------------------------------------------------
+   
+   //5. Program dibawah ini akan mencetak string sebanyak?
+     public static void main(String[] args) {
+         for ( i =0; i <11; i++) {
+          for (j=1; j <100; j++) {
+         System.out.println(“Teknik Informatika“);
+     }
+   -----------------------------------------------------------
+                 Mencetak sebanyak tak hingga
+   -----------------------------------------------------------
+   
+   //6. Buat program untuk menghitung Diskon dan Total Bayar, jika Pembelian >= Rp.1000.000 maka akan diberikan diskon sebesar 10%. Total bayar = Pembelian – Diskon
+   
+      public static void main(String[] args) {
+           double pembelian, total = 0;
+        
+           Scanner input = new Scanner(System.in);
+        
+           System.out.print("Pembelian : ");
+           pembelian = input.nextDouble();
+        
+           if(pembelian >= 1000000){
+               System.out.println("Diskon : 10%");
+               total = pembelian - pembelian *(10 / 100f);
+               System.out.println("Total bayar : " + total);
+           } else {
+               System.out.println("Diskon : 0%");
+               System.out.println("Total bayar : " + pembelian);
+            
+           }     
+      
+      }
+   
